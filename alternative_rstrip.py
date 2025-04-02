@@ -8,3 +8,8 @@ def custom_rstrip_alt(input_string):
         if not input_string[i].isspace():
             return input_string[:i + 1]
     return ""
+
+#Ask the user to input an alternative statement
+user_statement_alt = input("Enter another statement: ")
+cleaned_statement_alt = custom_rstrip_alt(user_statement_alt)
+print("Statement (without trailing spaces):", cleaned_statement_alt)
