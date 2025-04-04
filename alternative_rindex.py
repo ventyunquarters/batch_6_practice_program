@@ -5,3 +5,10 @@ def custom_rindex(input_string, substring):
         if i >= -1 and input_string[i + 1:i + 1 + len(substring)] == substring:
             return i + 1
     return -1
+
+# Ask user to enter a statement
+user_statement = input("Enter a statement: ")
+search_substring = input("Enter the substring you want to find (from the right): ")
+
+# Find the last index of the substring
+last_index = custom_rindex(user_statement, search_substring)
