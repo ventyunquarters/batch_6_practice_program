@@ -12,3 +12,9 @@ search_substring = input("Enter the substring you want to find (from the right):
 
 # Find the last index of the substring
 last_index = custom_rindex(user_statement, search_substring)
+
+# Display the result
+if last_index != -1:
+    print(f"The last occurrence of '{search_substring}' starts at index: {last_index}")
+else:
+    print(f"'{search_substring}' was not found in the string.")
